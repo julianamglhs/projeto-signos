@@ -1,3 +1,98 @@
+/* Fundo astrológico */
 body {
-    background-color: #f4f4f4;
+    background: radial-gradient(circle at top, #020235, #0f0f1a);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* Container centralizado (já vem do Bootstrap, mas reforço visual) */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card principal */
+.card-signo {
+    max-width: 420px;
+    width: 100%;
+    border-radius: 20px;
+    background: rgba(20, 20, 35, 0.85); /* mais escuro pra contraste */
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Hover elegante */
+.card-signo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Header com alinhamento */
+.signo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Ícone do signo */
+.signo-img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Nome do signo */
+h2 {
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Descrição */
+.descricao {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Botão */
+.btn-outline-light {
+    border: 1px solid #fff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn-outline-light:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Animação de entrada */
+.animate {
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efeito flutuante do ícone */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
 }
