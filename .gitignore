@@ -1,0 +1,11 @@
+# arquivos do sistema
+.DS_Store
+
+# logs
+*.log
+
+# node (caso use no futuro)
+node_modules/
+
+# arquivos temporários
+*.tmp
